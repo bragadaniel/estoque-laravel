@@ -1,0 +1,12 @@
+    @extends('layout.principal')
+    @section('conteudo')
+
+            <h1> Detalhes do produto: {{ $p->nome }} </h1>
+
+            <ul>
+                <li><b>Quantidade em estoque:</b> {{ $p->quantidade  }}</li>
+                <li><b>Valor:</b> R$ {{ $p->valor }}  </li>
+                <li><b>Descrição:</b> {{ $p->descricao or 'Nenhuma descrição informada' }}</li>
+
+            </ul>
+    @stop
